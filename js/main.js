@@ -16,10 +16,19 @@ const getUserTemplate = (props) => {
     `;
 };
 
-const renderUser = (user) => {
-    rootElement.innerHTML = '';
-    const userTemplates = users.map((user) => {
-        getUserTemplate(user);
+const renderUsers = (usersArray) => {
+    // rootElement.innerHTML = '';
+
+    const userTemplates = usersArray.map((user) => {
+        return getUserTemplate(user);
     }).join('');
+    
+    console.log(userTemplates)
+
     rootElement.insertAdjacentHTML('beforeend', userTemplates);
 }
+
+// EVENTS
+usersBtn.addEventListener('click', () => {
+    renderUsers(users);
+})
