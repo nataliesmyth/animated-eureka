@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 0 20px;
+}
+
+nav{
+    background: hotpink;
+    color: #fff;
+    padding: 1% 2%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#container {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    min-height: 100%;
+    background-color: darkgrey;
+    padding: 1% 2%;
+    flex: -1;
+    max-width: fit-content;
+}
+
+aside button {
+    display: block;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 1% 2%;
+    background-color: hotpink;
+}
+
+main {
+    flex: 6;
+    padding: 1% 2%;
+}
+
+.card {
+    width: 300px;
+    padding: 2%;
+    border: 2px solid lightgrey;
+    display: inline-block;  
+}
